@@ -1,11 +1,10 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Open Interpreter",
   "logo": {
-    "dark": "/logo/open-interpreter-dark.png",
-    "light": "/logo/open-interpreter-light.png"
+    "dark": "/assets/logo/circle-inverted.png",
+    "light": "/assets/logo/circle.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/assets/favicon.png",
   "colors": {
     "primary": "#000000",
     "light": "#FFFFFF",
@@ -20,23 +19,26 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "https://github.com/KillianLucas/open-interpreter/issues"
+      "name": "18K ★ GitHub",
+      "url": "https://github.com/KillianLucas/open-interpreter"
     }
   ],
   "topbarCtaButton": {
-    "name": "18K ★ GitHub",
-    "url": "https://github.com/KillianLucas/open-interpreter"
+    "name": "Join Discord",
+    "url": "https://discord.com/invite/6p3fD6rBVm"
   },
-  
   "navigation": [
     {
       "group": "Get Started",
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "Essentials",
+      "group": "New Site Primatives",
       "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+    },
+    {
+      "group": "Local Inference Guide",
+      "pages": ["local-inference-guide/gpu", "local-inference-guide/macos", "local-inference-guide/windows"]
     }
   ],
   "footerSocials": {
