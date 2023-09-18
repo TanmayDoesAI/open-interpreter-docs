@@ -19,7 +19,7 @@
   },
   "topbarLinks": [
     {
-      "name": "18K ★ GitHub",
+      "name": "22K ★ GitHub",
       "url": "https://github.com/KillianLucas/open-interpreter"
     }
   ],
@@ -33,12 +33,21 @@
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "New Site Primatives",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Usage",
+      "pages": [
+        "usage/cli_commands",
+        "usage/python_library",
+        "usage/commands",
+        "usage/desktop-app"
+      ]
     },
     {
-      "group": "Local Inference Guide",
-      "pages": ["local-inference-guide/gpu", "local-inference-guide/macos", "local-inference-guide/windows"]
+      "group": "Contributing",
+      "pages": ["contributing/Contributing_To_Open-interpreter", "contributing/Contributing_to_Docs"]
+    },
+    {
+      "group": "License",
+      "pages": ["license"]
     }
   ],
   "footerSocials": {
