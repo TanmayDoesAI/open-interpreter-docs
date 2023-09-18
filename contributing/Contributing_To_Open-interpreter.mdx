@@ -1,0 +1,72 @@
+---
+title: Contributing to Open Interpreter
+---
+Thank you for expressing interest in contributing to Open Interpreter. Your contributions play a pivotal role in our mission to build a universal interface between language models and computers.
+
+# Our Collective Goals
+
+As an open-source endeavor, we're committed to collaborative efforts to refine and enhance Open Interpreter. Here's where your expertise can help us achieve our collective aspirations:
+
+## Roadmap
+
+We're actively developing a public roadmap to offer transparency regarding our priorities and upcoming enhancements.
+
+At present, our primary focus lies in refining CodeLlama integration and ensuring the core interpreter logic remains straightforward and comprehensible. Our objective is to empower non-coders by enabling natural language to be translated into executable actions.
+
+In this vein, we strive to maintain a streamlined codebase rather than overly complicating it. Our aim is to democratize coding - transforming words into actions - for individuals without extensive coding experience. We welcome dialogues on how best to uphold this approach while incorporating new functionalities.
+
+## Reporting Issues
+
+If you come across a bug or have a compelling feature in mind, please don't hesitate to [open a new issue](https://github.com/KillianLucas/open-interpreter/issues/new/choose). To expedite an effective response, kindly include the following:
+
+- **Bug Reports:** Provide detailed steps to reproduce the issue, specifics about your operating system and Python version, along with any relevant screenshots and code/error snippets.
+- **Feature Requests:** Furnish a comprehensive explanation of how your concept benefits Open Interpreter and its community.
+
+## Contributing Code
+
+We wholeheartedly welcome code contributions through pull requests. To ensure smooth integration, please adhere to these guidelines:
+
+- Before embarking on substantial code changes, we encourage you to discuss your ideas on [Discord](https://discord.com/invite/6p3fD6rBVm) to verify their alignment with our project vision. We aim to maintain a user-friendly and approachable codebase.
+
+- Fork the repository and establish a new branch for your work.
+
+- Implement changes with clear code comments elucidating your approach. Endeavor to follow established conventions within the codebase.
+
+- Initiate a PR to `main` referencing any pertinent issues. Offer comprehensive context about your alterations.
+
+- We'll conduct reviews of PRs as promptly as possible and collaborate with you to merge your contribution. We appreciate your patience as reviews necessitate time.
+
+- Upon approval, your code will be merged - thank you for enhancing Open Interpreter!
+
+## Running Your Local Fork
+
+After forking the code and creating a new branch for your work, you can execute the fork in CLI mode by following these steps:
+
+1. Navigate to the project folder `/open-interpreter`.
+2. Install dependencies with `poetry install`.
+3. Execute the program with `poetry run interpreter`.
+
+Upon modifying the source code, remember to re-run `poetry run interpreter`.
+
+### Installing New Packages
+
+If you wish to integrate new dependencies into the project, kindly use `poetry add package-name`.
+
+### Known Issues
+
+For some, `poetry install` may encounter hang-ups with certain dependencies. Initially, attempt the following command in your terminal:
+
+```bash
+export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
+```
+Then re-run `poetry install`. If this proves ineffective, please join our Discord community for assistance.
+
+### Queries?
+
+Join our [Discord community](https://discord.com/invite/6p3fD6rBVm) to connect with fellow contributors. We're more than happy to assist you with your initial open-source endeavor!
+
+## Licensing
+
+Contributions to open-interpreter fall under the MIT license.
+
+We extend our gratitude for your dedication and understanding as we continue to refine our processes. Your involvement is sincerely valued.
