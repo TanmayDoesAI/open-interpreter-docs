@@ -1,0 +1,72 @@
+---
+title: Command Line
+icon: 'terminal'
+---
+## Installation
+```bash
+pip install open-interpreter
+```
+This command installs the Open Interpreter package using the Python package manager, pip. It allows you to easily set up Open Interpreter on your local environment.
+
+## Running Interpreter
+### Default Mode
+
+```bash
+interpreter
+```
+
+Running this command opens the Open Interpreter in the terminal. It provides an interactive interface for users to communicate with the language models (by default GPT-4), enabling them to run code and perform various tasks.
+
+### Fast Mode
+
+```bash
+interpreter --fast
+```
+
+This command allows you to set the Open Interpreter to use the `gpt-3.5-turbo` model in fast mode. It is particularly useful for quicker responses in the interactive chat.
+
+### Local Mode
+
+```bash
+interpreter --local
+```
+
+Running Open Interpreter in local mode using this command enables the use of `Code Llama`, which allows for code execution in a local environment. This provides more flexibility and control over the execution.
+
+### Using Specific Hugging Face Model
+
+```bash
+interpreter --model tiiuae/falcon-180B
+```
+
+This command allows you to run any Hugging Face model locally by specifying its repository ID. In this example, the model with the ID `tiiuae/falcon-180B` is selected for execution.
+
+### Setting Max Tokens and Context Window
+
+```bash
+interpreter --max_tokens 2000 --context_window 16000
+```
+
+By using these optional parameters, you can easily modify the `max_tokens` and `context_window` (in tokens) of locally running models. Adjusting the context window can help manage memory usage, especially if GPU resources are limited.
+
+### Using Azure OpenAI
+
+```bash
+interpreter --use-azure
+```
+
+This command is used to set up a connection to an Azure deployment. It will guide you through the process of configuring Open Interpreter to work with an Azure deployment.
+
+### Debugging
+
+Enabling debug mode with this command provides highly detailed and verbose output. This can be useful for contributors or users who need to inspect Open Interpreter for debugging purposes.
+
+Usage before starting the chat:
+```bash
+interpreter --debug
+```
+Once you're in the chat
+```
+> %debug true <- Turns on debug mode
+> %debug false <- Turns off debug mode
+```
