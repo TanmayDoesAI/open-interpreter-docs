@@ -19,7 +19,7 @@
   },
   "topbarLinks": [
     {
-      "name": "22K ★ GitHub",
+      "name": "23K ★ GitHub",
       "url": "https://github.com/KillianLucas/open-interpreter"
     }
   ],
@@ -42,8 +42,19 @@
       ]
     },
     {
+      "group": "Installation",
+      "pages": [
+        "Installation/windows",
+        "Installation/macos",
+        "Installation/gpu"
+      ]
+    },
+    {
       "group": "Contributing",
-      "pages": ["contributing/Contributing_To_Open-interpreter", "contributing/Contributing_to_Docs"]
+      "pages": [
+        "contributing/Contributing_to_Open-interpreter",
+        "contributing/Contributing_to_docs"
+      ]
     },
     {
       "group": "License",
@@ -52,6 +63,7 @@
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/hellokillian",
-    "github": "https://github.com/KillianLucas/open-interpreter"
+    "github": "https://github.com/KillianLucas/open-interpreter",
+    "discord":"https://discord.com/invite/6p3fD6rBVm"
   }
 }
