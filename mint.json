@@ -65,5 +65,9 @@
     "twitter": "https://twitter.com/hellokillian",
     "github": "https://github.com/KillianLucas/open-interpreter",
     "discord":"https://discord.com/invite/6p3fD6rBVm"
+  },
+  "feedback": {
+  	"suggestEdit": true,
+  	"raiseIssue": true
   }
 }
