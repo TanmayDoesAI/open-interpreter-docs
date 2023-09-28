@@ -1,0 +1,39 @@
+---
+title: Streaming Response
+---
+
+```python
+for chunk in interpreter.chat("What's 34/24?", stream=True, display=False):
+  print(chunk)
+```
+
+The above code would output:
+
+```
+{'language': 'python'}
+{'code': '34'}
+{'code': ' /'}
+{'code': ' '}
+{'code': '24'}
+{'executing': {'code': '34 / 24', 'language': 'python'}}
+{'active_line': 1}
+{'output': '1.4166666666666667\n'}
+{'active_line': None}
+{'end_of_execution': True}
+{'message': 'The'}
+{'message': ' result'}
+{'message': ' of'}
+{'message': ' the'}
+{'message': ' division'}
+{'message': ' '}
+{'message': '34'}
+{'message': '/'}
+{'message': '24'}
+{'message': ' is'}
+{'message': ' approximately'}
+{'message': ' '}
+{'message': '1'}
+{'message': '.'}
+{'message': '42'}
+{'message': '.'}
+```

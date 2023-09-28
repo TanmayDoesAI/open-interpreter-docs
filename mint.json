@@ -19,7 +19,7 @@
   },
   "topbarLinks": [
     {
-      "name": "23K ★ GitHub",
+      "name": "27K ★ GitHub",
       "url": "https://github.com/KillianLucas/open-interpreter"
     }
   ],
@@ -29,36 +29,58 @@
   },
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "Getting Started",
+      "pages": ["getting-started/introduction", "getting-started/quick-start"]
+    },
+    {
+      "group": "Language Model Setup",
+      "pages": [
+        {
+          "group": "Cloud Models",
+          "pages": [
+            "language-model-setup/cloud-models/openai",
+            "language-model-setup/cloud-models/anthropic"
+          ]
+        },
+        {
+          "group": "Local Models",
+          "pages": [
+            "language-model-setup/local-models/overview",
+            "language-model-setup/local-models/getting-models",
+            "language-model-setup/local-models/install-on-mac",
+            "language-model-setup/local-models/install-on-windows"
+          ]
+        }
+      ]
     },
     {
       "group": "Usage",
       "pages": [
-        "usage/cli_commands",
-        "usage/python_library",
-        "usage/commands",
+        {
+          "group": "Terminal",
+          "icon": "terminal",
+          "pages": [
+            "usage/terminal/arguments",
+            "usage/terminal/settings",
+            "usage/terminal/conversation-history",
+            "usage/terminal/magic-commands",
+            "usage/terminal/budget-manager"
+          ]
+        },
+        {
+          "group": "Python",
+          "icon": "python",
+          "pages": [
+            "usage/python/arguments",
+            "usage/python/streaming-response",
+            "usage/python/settings",
+            "usage/python/conversation-history",
+            "usage/python/magic-commands",
+            "usage/python/budget-manager"
+          ]
+        },
         "usage/desktop-app"
       ]
-    },
-    {
-      "group": "Installation",
-      "pages": [
-        "Installation/windows",
-        "Installation/macos",
-        "Installation/gpu"
-      ]
-    },
-    {
-      "group": "Contributing",
-      "pages": [
-        "contributing/Contributing_to_Open-interpreter",
-        "contributing/Contributing_to_docs"
-      ]
-    },
-    {
-      "group": "License",
-      "pages": ["license"]
     }
   ],
   "footerSocials": {
