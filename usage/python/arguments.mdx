@@ -2,7 +2,13 @@
 title: Arguments
 ---
 
----
+<Card
+  title="New: Streaming responses in Python"
+  icon="arrow-up-right"
+  href="/usage/python/streaming-response"
+>
+  Learn how to build Open Interpreter into your application.
+</Card>
 
 #### `messages`
 
@@ -144,17 +150,19 @@ interpreter.temperature = 0.7
 
 #### `system_message`
 
-Here, you can add a custom system message for extending Open Interpreter's functionality.
+This stores the model's system message as a string. Explore or modify it:
 
 ```python
-interpreter.system_message = "Run shell commands with -y."
+interpreter.system_message += "\nRun all shell commands with -y."
 ```
 
 ---
 
 #### `context_window`
 
-This sets the context window size in terms of tokens.
+This manually sets the context window size in tokens.
+
+We try to guess the right context window size for you model, but you can override it with this parameter.
 
 ```python
 interpreter.context_window = 16000
@@ -184,7 +192,7 @@ interpreter.api_base = "https://api.example.com"
 
 #### `api_key`
 
-You can set your API key for authentication with this property.
+Set your API key for authentication.
 
 ```python
 interpreter.api_key = "your_api_key_here"
@@ -194,8 +202,8 @@ interpreter.api_key = "your_api_key_here"
 
 #### `max_budget`
 
-This property sets the maximum budget limit for the session.
+This property sets the maximum budget limit for the session in USD.
 
 ```python
-interpreter.max_budget = 0.01
+interpreter.max_budget = 0.01 # 1 cent
 ```
