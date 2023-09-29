@@ -2,8 +2,68 @@
 title: Getting Models
 ---
 
-You can also specify local models from Hugging Face:
+You can run any [`GGUF`](https://huggingface.co/models?search=gguf) model hosted on Hugging Face with Open Interpreter:
 
-```bash
-interpreter --local --model tiiuae/falcon-180B
+<CodeGroup>
+
+```bash Terminal
+interpreter --local --model <user>/<model>
 ```
+
+```python Python
+import interpreter
+
+interpreter.local = True
+interpreter.model = "<user>/<model>"
+```
+
+</CodeGroup>
+
+The command above will let you choose your quantization settings, download the model, then run it.
+
+### Example
+
+---
+
+For example, if the repo URL was:
+
+```
+https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF
+```
+
+The command to download and run this language model in Open Interpreter would be:
+
+<CodeGroup>
+
+```bash Terminal
+interpreter --local --model Mistral-7B-Instruct-v0.1-GGUF
+```
+
+```python Python
+import interpreter
+
+interpreter.local = True
+interpreter.model = "Mistral-7B-Instruct-v0.1-GGUF"
+```
+
+</CodeGroup>
+
+<br/>
+
+<Info>Run this command with your internet on once to download the model.</Info>
+
+### Get Models
+
+---
+
+<Card
+  title="GGUF models on HuggingFace"
+  icon="arrow-up-right"
+  iconType="solid"
+  href="https://huggingface.co/models?search=gguf"
+>
+</Card>
+<br/>
+Open Interpreter can run any of the models at the link above.
+
+Click one, then copy the text after the second-to-last `/` to use in the command above.

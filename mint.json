@@ -64,6 +64,7 @@
     {
       "group": "Usage",
       "pages": [
+        "usage/examples",
         {
           "group": "Terminal",
           "pages": [

@@ -2,8 +2,12 @@
 title: Overview
 ---
 
-To run Open Interpreter locally, execute:
+To run Open Interpreter locally, use `local` mode:
 
 ```bash
 interpreter --local
 ```
+
+This will automatically select Code Llama. If you include a `model`, the `local` flag will try to run it locally.
+
+Currently we support running [any GGUF quantized language models from HuggingFace](https://huggingface.co/models?search=gguf).
