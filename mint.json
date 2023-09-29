@@ -36,11 +36,18 @@
     {
       "group": "Language Model Setup",
       "pages": [
+        "language-model-setup/introduction",
         {
-          "group": "Cloud Models",
+          "group": "Hosted Models",
           "pages": [
-            "language-model-setup/cloud-models/openai",
-            "language-model-setup/cloud-models/anthropic"
+            "language-model-setup/hosted-models/openai",
+            "language-model-setup/hosted-models/azure",
+            "language-model-setup/hosted-models/anthropic",
+            "language-model-setup/hosted-models/replicate",
+            "language-model-setup/hosted-models/ai21",
+            "language-model-setup/hosted-models/openrouter",
+            "language-model-setup/hosted-models/cohere",
+            "language-model-setup/hosted-models/petals"
           ]
         },
         {
@@ -84,9 +91,10 @@
       ]
     }
   ],
+  "feedback": {
+    "suggestEdit": true
+  },
   "footerSocials": {
-    "twitter": "https://twitter.com/hellokillian",
-    "github": "https://github.com/KillianLucas/open-interpreter",
-    "discord":"https://discord.com/invite/6p3fD6rBVm"
+    "twitter": "https://twitter.com/hellokillian"
   }
 }
