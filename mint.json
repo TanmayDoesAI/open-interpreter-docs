@@ -5,19 +5,8 @@
     "light": "/assets/logo/circle.png"
   },
   "favicon": "/assets/favicon.png",
-  "colors": {
-    "primary": "#000000",
-    "light": "#FFFFFF",
-    "dark": "#000000",
-    "background": {
-      "light": "#FFFFFF",
-      "dark": "#000000"
-    },
-    "anchors": {
-      "from": "#000000",
-      "to": "#000000"
-    }
-  },
+  "colors": { "primary": "#111827", "light": "#FAFAFA", "dark": "#111827" },
+  "search": { "prompt": "Search..." },
   "topbarLinks": [
     {
       "name": "27K ★ GitHub",
@@ -31,7 +20,7 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["introduction", "basics"]
+      "pages": ["introduction", "setup"]
     },
     {
       "group": "Language Model Setup",
