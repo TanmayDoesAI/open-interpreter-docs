@@ -5,8 +5,19 @@
     "light": "/assets/logo/circle.png"
   },
   "favicon": "/assets/favicon.png",
-  "colors": { "primary": "#111827", "light": "#FAFAFA", "dark": "#111827" },
-  "search": { "prompt": "Search..." },
+  "colors": {
+    "primary": "#000000",
+    "light": "#FFFFFF",
+    "dark": "#000000",
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#000000"
+    },
+    "anchors": {
+      "from": "#000000",
+      "to": "#000000"
+    }
+  },
   "topbarLinks": [
     {
       "name": "27K ★ GitHub",
@@ -21,34 +32,6 @@
     {
       "group": "Getting Started",
       "pages": ["introduction", "setup"]
-    },
-    {
-      "group": "Language Model Setup",
-      "pages": [
-        "language-model-setup/introduction",
-        {
-          "group": "Hosted Models",
-          "pages": [
-            "language-model-setup/hosted-models/openai",
-            "language-model-setup/hosted-models/azure",
-            "language-model-setup/hosted-models/anthropic",
-            "language-model-setup/hosted-models/replicate",
-            "language-model-setup/hosted-models/ai21",
-            "language-model-setup/hosted-models/openrouter",
-            "language-model-setup/hosted-models/cohere",
-            "language-model-setup/hosted-models/petals"
-          ]
-        },
-        {
-          "group": "Local Models",
-          "pages": [
-            "language-model-setup/local-models/overview",
-            "language-model-setup/local-models/getting-models",
-            "language-model-setup/local-models/install-on-mac",
-            "language-model-setup/local-models/install-on-windows"
-          ]
-        }
-      ]
     },
     {
       "group": "Usage",
@@ -76,6 +59,34 @@
           ]
         },
         "usage/desktop-app"
+      ]
+    },
+    {
+      "group": "Language Models",
+      "pages": [
+        "language-model-setup/introduction",
+        {
+          "group": "Hosted Setup",
+          "pages": [
+            "language-model-setup/hosted-models/openai",
+            "language-model-setup/hosted-models/azure",
+            "language-model-setup/hosted-models/anthropic",
+            "language-model-setup/hosted-models/replicate",
+            "language-model-setup/hosted-models/ai21",
+            "language-model-setup/hosted-models/openrouter",
+            "language-model-setup/hosted-models/cohere",
+            "language-model-setup/hosted-models/petals"
+          ]
+        },
+        {
+          "group": "Local Setup",
+          "pages": [
+            "language-model-setup/local-models/overview",
+            "language-model-setup/local-models/getting-models",
+            "language-model-setup/local-models/install-on-mac",
+            "language-model-setup/local-models/install-on-windows"
+          ]
+        }
       ]
     }
   ],
