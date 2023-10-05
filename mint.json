@@ -20,7 +20,7 @@
   },
   "topbarLinks": [
     {
-      "name": "27K ★ GitHub",
+      "name": "28K ★ GitHub",
       "url": "https://github.com/KillianLucas/open-interpreter"
     }
   ],
@@ -31,7 +31,10 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["introduction", "setup"]
+      "pages": [
+        "introduction",
+        "setup"
+      ]
     },
     {
       "group": "Usage",
